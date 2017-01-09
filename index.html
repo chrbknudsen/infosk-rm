@@ -127,15 +127,38 @@
 		Reveal.initialize({
 			controls: false,
 			progress: false,
+			slideNumber: false,
 			history: false,
+			keyboard: false,
+			overview: false,
 			center: true,
-			keyboard: true,
-			overview: true,
-			autoSlide: 5000,
+			touch: false,
 			loop: true,
-
+			rtl: false,
+			shuffle: true,  //randomizes the order of slides each time the presentation loads
+			fragments: true,
+			embedded: false,
+			help: false,
+			showNotes: false,
+			autoSlide: 5000,
+			autoSlideStoppable: false,
+			autoSlideMethod: Reveal.navigateNext,
+			mouseWheel: false,
+			hideAddressBar: true,
+			previewLinks: false,
+			transition: 'default',
+			transitionSpeed: 'slow', //default/fast/slow
+			backgroundTransition: 'default',
+			viewDistance: 3,
+			parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+			 // Parallax background size
+    			parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+			 // Number of pixels to move the parallax background per slide
+    			 // - Calculated automatically unless specified
+    			 // - Set to 0 to disable movement along an axis
+    			parallaxBackgroundHorizontal: null,
+    			parallaxBackgroundVertical: null,
 			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-			transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 				});
 
 	</script>
